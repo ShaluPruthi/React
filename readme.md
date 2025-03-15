@@ -30,3 +30,9 @@ file sends as the producer
 
 to create project using Vite
     npm create vite@latest
+
+devDependecies sends to the devops
+install required packages/libraries
+    npm i
+run the project
+    npm run dev
