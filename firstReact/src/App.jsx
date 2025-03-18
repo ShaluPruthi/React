@@ -1,11 +1,8 @@
-import { useState } from 'react'
-import './App.css'
-
+import Learn from "./learn"
 function App() {
 
   return (
-    <>
-    </>
+    <Learn />
   )
 }
 
