@@ -1,8 +1,12 @@
-import Learn from "./learn"
+
 function App() {
+  const userName = "Hello World"
 
   return (
-    <Learn />
+    <>
+    {/* variable injection */}
+    <h1>Heyy {userName}</h1>
+    </>
   )
 }
 
