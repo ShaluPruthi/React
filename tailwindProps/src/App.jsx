@@ -1,13 +1,21 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="/src/App.css" />
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
+import Card from "../components/Card";
+
+function App() {
+  let myObj={
+    username:"chai",
+    age: 22,
+  }
+
+  let myArr = [1,2,3,4,5,6,7,8,9,10]
+  return (
+    <>
+    <div className="bg-blue-500 text-white p-4 mb-4">
+      Tailwind is Working 🎉
+    </div>
+    <Card username="shal" btnText="visit me" someObj= {myObj}/>
+    <Card username="chai aur code" someObj= {myArr}/>
+  </>
+  );
+}
+
+export default App;

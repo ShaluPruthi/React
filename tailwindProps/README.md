@@ -14,3 +14,11 @@ If you are developing a production application, we recommend using TypeScript an
 
 # tailwindCSS
 utility first CSS framework
+install tailwind : npm install -D tailwindcss postcss autoprefixer <!-- -D refers dependencies -->
+                   npx tailwindcss init -p
+
+# Props (Properties)
+props will make the components reusable.
+each file have the access of props.
+Props return the object.
+props help to enter the values in one component which are reusable in the application.
