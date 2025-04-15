@@ -1,4 +1,5 @@
-import React from 'react'
+//useId : generating unique IDs that can be passed to accessibility attributes.
+import React , {useId} from 'react'
 
 function InputBox({
     label,
@@ -9,21 +10,22 @@ function InputBox({
     selectCurrency = "usd",
     amountDisable = false,
     currencyDisable = false,
-    
     className = "",
 }) {
    
+    //call useId() to generate a unique ID for the input field
+    const amountId = useId()
 
     return (
 
         //take CSS from user
         <div className={`bg-white p-3 rounded-lg text-sm flex `}>   
             <div className="w-1/2">
-                <label  className="text-black/40 mb-2 inline-block">
+                <label htmlFor={amountId} className="text-black/40 mb-2 inline-block">
                     {label}
                 </label>
                 <input
-                    
+                    id={amountId}
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number"
                     placeholder="Amount"
